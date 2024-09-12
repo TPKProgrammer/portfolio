@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.container h1 {
+    margin-top: 200px;
+    margin-left: 50px;
+    word-spacing: 10px;
+}
+
+.container p {
+    margin-left: 50px;
+    word-spacing: 5px;
+    font-size: 13px;
+}
+
+.container .image {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    align-items: center;
+}
+
+.container .image::before {
+    content: '';
+    position: absolute;
+    background: rgba(80, 80, 80, 0.801);
+    width: 25rem;
+    height: 50px;
+    top: 370px;
+    filter: blur(20px);
+    border-radius: 50%;
+}
+
+.container .image img {
+    width: 130px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    transition: 0.5s ease-out 100ms;
+    cursor: pointer;
+}
+
+.container .image img:hover {
+    transform: scale(1.05);
+}
+
+.container .image .img1 {
+    height: 15rem;
+    margin-right: -15px;
+}
+
+.container .image .img2 {
+    height: 20rem;
+}
+
+.container .image .img3 {
+    height: 15rem;
+    margin-left: -15px;
+}
+
+.container button {
+    margin-left: 50px;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.container button a {
+    color: white;
+    text-decoration: none;
+}
+
+.sample {
+    background: black;
+    height: 100vh;
+}
+
+.sample h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+.sample p {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.sample a {
+    color: white;
+}
